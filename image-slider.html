@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width  initial-scale=1.0">
+        <title>Responsive Image-slider</title>
+        <style type="text/css">
+            #slider {
+                overflow: hidden;
+            }
+            #slider figure{
+                position: absolute;
+                width: 400%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+            }
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+
+            @keyframe slider {
+                0% {
+                    left: 0;
+                }
+                20% {
+                    left: 0;
+                }
+                25% {
+                    left: -100%
+                }
+                45% {
+                    left: -100%
+                }
+                50% {
+                    left: -200%
+                }
+                70% {
+                    left: -200%
+                }
+                75% {
+                    left: -300%
+                }
+                95% {
+                    left: -300%
+                }
+                100% {
+                    left: 400%
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="slider">
+            <figure>
+                <img src="image/istockphoto-1386398433-612x612.jpg">
+                <img src="image/istockphoto-930623268-612x612.jpg">
+                <img src="image/istockphoto-1214349249-612x612.jpg">
+                <img src="image/istockphoto-1023783044-612x612.jpg">
+                <img src="image/istockphoto-1386398433-612x612.jpg">
+            </figure>
+        </div>
+    </body>
+</html>
